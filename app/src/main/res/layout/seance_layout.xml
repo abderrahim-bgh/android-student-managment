@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="80dp"
+    android:layout_marginBottom="6dp"
+    android:background="#118ab2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Name seance"
+
+                android:id="@+id/name_seance"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#fff"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/down"
+                android:layout_gravity="right"
+                android:id="@+id/dwn_item"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Time start"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Time start"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/time_start"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text=""
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Time end"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+
+                android:textSize="15dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Time end"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/time_end"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Date"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/date_se"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

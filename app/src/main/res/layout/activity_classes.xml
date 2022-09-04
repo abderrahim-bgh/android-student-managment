@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    tools:context=".classes">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/groups_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#3F51B5"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:queryHint="Search class.."
+            app:queryHint="Search class ..."
+            android:layout_gravity="end"
+            app:searchIcon="@drawable/ic_baseline_search_24"
+            app:searchHintIcon="@drawable/ic_baseline_search_24"
+            android:iconifiedByDefault="false"
+            android:layout_alignParentTop="true"
+            app:showAsAction="always"
+            app:title="classes "
+            app:titleTextColor="#fee440"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-36dp"
+        android:layout_marginEnd="20dp"
+        app:backgroundTint="#F2FEE440"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/black" />
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classes_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
